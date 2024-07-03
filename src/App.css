@@ -1,0 +1,122 @@
+button{
+  padding:20px;
+  margin:10px;
+  border-radius: 20px;
+  background-color: beige;
+}
+input[type="text"] {
+  padding:20px;
+  margin: 4px;
+  border-radius: 10px;
+  width: 300px;
+}
+.Result{
+  font-size: 22px;
+  color: antiquewhite;
+}
+body{
+  background-color: black;
+border-radius: 3px;
+
+}
+.Layout{
+  position: absolute;
+  left: 600px;
+  width: 400px;
+  background-color: rgba(185, 165, 165, 0.237);
+  box-shadow: 1px 2px 3px whitesmoke;
+  border-radius: 50px;
+}
+.Layout1{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 4px;
+  height: 100%;
+  
+  animation: mymove 1s infinite;
+}
+.Layout2{
+  position: absolute;
+  top: 0px;
+  left: 99%;
+  width: 4px;
+  height: 100%;
+  animation: mymove 1s infinite;
+}
+.Layout3{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 99%;
+  height: 4px;
+  animation: mymove 1s infinite;
+}
+.Layout4{
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  width: 100px;
+  height: 100px;
+border-radius: 50%;
+  border:5px dotted green;
+  border-right: transparent;
+  border-left: transparent;
+  animation: spin 4s linear infinite;
+  box-shadow: 1px 2px 3px  white,1px 1px  green;
+
+}
+.Motion{
+  background-color: azure;
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg);
+       border-top:2px dotted blue;
+       border-bottom:1px solid rgb(203, 10, 197); }
+  100% { transform: rotate(360deg);
+         border-top:1px solid rgb(203, 10, 197); 
+         border-bottom:2px dotted blue;
+  
+  
+  }
+}
+@keyframes mymove {
+  0%   {background-color: aqua;}
+  25%  {background-color: rgb(225, 95, 19);}
+  75%  {background-color: rgb(21, 197, 5);}
+  100% {background-color: rgb(255, 0, 242);}
+}
+
+@media (max-width: 480px) {
+  body {
+      background-color:black;
+  }
+  .Layout{
+    position: absolute;
+    left: 20px;
+    top: 100px;
+   padding-bottom: 100px;
+   font-size: 70px;
+   
+  }
+  .resultbutton{
+    position: relative;
+   left: 0px;
+ 
+
+  }
+  .Layout4{
+    position: absolute;
+    top: 200px;
+    left: 170px;
+  }
+}
+
